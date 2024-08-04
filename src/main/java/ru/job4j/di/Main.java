@@ -7,12 +7,7 @@ public class Main {
         context.reg(StartUI.class);
         context.reg(ConsoleInput.class);
 
-        StartUI ui = context.get(StartUI.class);
         ConsoleInput ci = context.get(ConsoleInput.class);
-
-        ui.add("Petr Arsentev");
-        ui.add("Ivan ivanov");
-        ui.print();
         ci.askStr("yes or no?");
     }
 }
